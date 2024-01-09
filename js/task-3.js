@@ -4,11 +4,9 @@ function getElementWidth(
   border
 ) {
   return (
-    content +
-    padding +
-    padding +
-    border +
-    border
+    parseFloat(content) +
+    parseFloat(padding) * 2 +
+    parseFloat(border) * 2
   );
 }
 console.log(
